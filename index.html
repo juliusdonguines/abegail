@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./bootstrap.js"></script>
+    <title>Abegail Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigations  -->
+    <div class="maintop">
+      <h1 style="color: #f6f6f6">Portfolio 🌸</h1>
+      <nav>
+        <a href="#" class="link">Home</a>
+        <a href="#pic" class="link">Picture</a>
+        <a href="#skill" class="link">Skill</a>
+      </nav>
+
+      <div
+        class="navbar"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasTop"
+        aria-controls="offcanvasTop"
+      >
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <section id="home">
+      <div class="content">
+        <div class="describe">
+          <h1 class="one">Abegail <br />Palada</h1>
+          <p>
+            Hello. I'm Abegail Palada currently studying BSIT 3rd year at Laguna
+            State Polytechnic Unviersity- Los Banos Campus. I'm here to
+            collaborate with you every step of the way. Let's turn your vision
+            into reality and propel your organization toward success in the
+            ever-evolving landscape of technology.
+          </p>
+          <button
+            type="button"
+            class="main"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            Read More
+          </button>
+        </div>
+        <div class="heroimg">
+          <img src="./images/ABBY home page.png" class="profile" />
+        </div>
+      </div>
+    </section>
+
+<!-- picture section -->
+<section id="pic">
+  <div class="container">
+    <h1 class="text-center mb-4">Picture</h1>
+
+    <style>
+      .carousel-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .carousel {
+        flex: 1 1 45%;
+        max-width: 500px;
+      }
+
+      .description-box {
+        flex: 1 1 45%;
+        max-width: 500px;
+      }
+
+      .portrait-img {
+        object-fit: cover;
+        height: 400px;
+        width: 100%;
+        border-radius: 12px;
+      }
+
+      .carousel-item {
+        text-align: center;
+      }
+
+      .description-box h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .description-box p {
+        font-size: 16px;
+        color: #444;
+      }
+
+      @media (max-width: 768px) {
+        .carousel-wrapper {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .carousel,
+        .description-box {
+          max-width: 100%;
+        }
+      }
+    </style>
+
+    <div class="carousel-wrapper">
+      <!-- Carousel -->
+      <div id="carouselExample" class="carousel slide carousel-fade carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/aby1.jpg" class="d-block portrait-img" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/aby2.jpg" class="d-block portrait-img" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/aby3.jpg" class="d-block portrait-img" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/aby4.jpg" class="d-block portrait-img" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/6c0a8fd1-8ee0-4d05-957b-0e58bd7e7eba.jpg" class="d-block portrait-img" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/72b08b56-c845-4b8c-a282-d9bd05bef9cc.jpg" class="d-block portrait-img" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/88f6ff9a-56bd-4c93-963f-449e8d38345e.jpg" class="d-block portrait-img" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/bd9e9a7b-7af7-4bd7-ba6c-754e358aa013.jpg" class="d-block portrait-img" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/d6c01e44-f606-4881-9c56-e948f23944cd.jpg" class="d-block portrait-img" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/download (1).jpg" class="d-block portrait-img" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/download (2).jpg" class="d-block portrait-img" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/download (3).jpg" class="d-block portrait-img" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/download.jpg" class="d-block portrait-img" alt="..." />
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Static Description -->
+      <div class="description-box">
+        <h3>Gallery Description</h3>
+        <p>
+          Ever since I held a camera in my hands, I discovered a unique kind of joy—one that comes from freezing a fleeting moment in time. Taking pictures quickly became more than just a hobby for me; it turned into a way of expressing how I see the world. Whether it's a simple candid of someone laughing or a carefully planned photoshoot with perfect lighting and angles, I find beauty in the details that others might overlook.
+
+Photography gives me a sense of purpose and peace. During photoshoots, I lose track of time, fully immersed in the process—choosing the right location, guiding poses, adjusting frames, and clicking at just the right second. It’s more than pressing a button; it’s about storytelling. Every photo I take holds a piece of emotion, a silent narrative waiting to be seen and felt.
+
+What I love most is that photography allows me to connect—with people, places, and even parts of myself I hadn’t noticed before. It has taught me patience, creativity, and the value of preserving memories. For me, the lens isn’t just glass—it’s a window into how I view life, full of meaning, depth, and untold stories. Taking pictures is my way of loving life and honoring the moments that make it beautiful.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+      <!-- Skill section -->
+    </section>
+    <section id="skill">
+      <h1 class="subhead">Skill</h1>
+      <div class="subcontent">
+        <div class="box">
+          <div class="card">
+            <img src="./images/skill1.jpg" class="skill-img" />
+          </div>
+          <h2>Project 1</h2>
+        </div>
+        <div class="box">
+          <div class="card">
+            <img src="./images/skill2.jpg" class="skill-img" />
+          </div>
+          <h2>Project 2</h2>
+        </div>
+        <div class="box">
+          <div class="card">
+            <img src="./images/skill3.jpg" class="skill-img" />
+          </div>
+          <h2>Project 3</h2>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="contact">
+        <a href="https://www.instagram.com/abigeyllll_/">Instagram</a>
+        <a href="https://www.facebook.com/idwotbish">Facebook</a>
+        <a href="https://www.tiktok.com/@dark_mochaaa">Tiktok</a>
+        <a href=" https://github.com/Abby0503">Github</a>
+      </div>
+    </footer>
+
+    <!---Bootstrap offcanvas--->
+    <div
+      class="offcanvas offcanvas-top off-bg"
+      tabindex="-1"
+      id="offcanvasTop"
+      aria-labelledby="offcanvasTopLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="left-text">
+        <h1><a href="#" class="off-link">Home</a></h1>
+        <hr />
+        <h1><a href="#pic" class="off-link">Picture</a></h1>
+        <hr />
+        <h1><a href="#skill" class="off-link">Skill</a></h1>
+        <hr />
+      </div>
+    </div>
+    <!---End Bootstrap offcanvas--->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content div-bg">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              READ MORE:
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Thank you for visiting, You can reach me thru email at abbypalada0@gmail.com
+             and thru my contact number at +63
+            909-363-8873.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary div-text"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modal -->
+  </body>
+</html>
